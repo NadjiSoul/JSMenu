@@ -1,0 +1,148 @@
+html,body{
+	padding: 0;
+	margin: 0;
+}
+
+/* BURGER BUTTON */
+.navbar{
+    position: relative;
+}
+.toggle_btn{
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    margin: 5px 10px 0;
+    cursor:pointer;
+    z-index: 1;
+    right: calc(8% - 30px);
+    margin-top: 100px;
+
+}
+.toggle_btn span{
+    height: 3px;
+    background-color: #FFF;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+.toggle_btn span:before{
+    content: '';
+    height: 3px;
+    background-color: #FFF;
+    width: 50%;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    margin-left: 15px;
+
+}
+/* BUTTON CROSS JS */
+.cross span{
+    background-color: red;
+    transform: rotate(45deg);
+}
+.cross span:before{
+    background-color: red;
+    top: 0;
+    transform: rotate(90deg);
+    width: 100%;
+    margin-left:0;
+}
+
+/* BLOC : WHITE + RED */
+.twonav{
+	position: fixed;
+	display: flex;
+	margin-left: 100%;
+	transition-duration: 0.8s;
+}
+/* AJOUT PAR JS */
+.twonav_open{
+	margin-left: 0;
+	transition-duration: 0.8s;
+}
+
+/* BLOC : RED */
+.navr{
+	width: 85vw;
+	height: 100vh;
+	background-color: red;
+}
+
+.navr ul{
+	width: 85%;
+	margin: auto;
+	height: 70vh;
+	border-top: 2px solid white;
+}
+/* BLOC LIST : RED */
+
+
+nav a img{
+	height: 20vh;
+	float: left;
+	margin-left: 100px;
+}
+
+
+.navr ul li a{
+	font-size: 24pt;
+	margin-top: 20px;
+	color: darkgrey;
+	display: flex;
+	flex-direction: column;
+    text-decoration: none;
+}
+
+.navr ul li a:hover{
+	color: #FFF;
+}
+/* BLOC : BLACK */
+.navb{
+	position: absolute;
+	right: 0;
+	background-color: black;
+	opacity: 0.9;
+	z-index: 0;
+}
+
+/* BLOC: WHITE + BLACK */
+.navw,.navb{
+	width: 15vw;
+	height: 100vh;
+}
+
+/* BLOC : WHITE */
+.navw{
+	background-color: white;
+
+}
+
+/* BLOC LIST : WHITE */
+
+.navw ul h4{
+	width: 70%;
+	border-bottom: 2px solid black;
+
+}
+.navw ul li a{
+	color: grey;
+}
+.navw ul li a:hover{
+	color: red;
+}
+.navw a,.navb a{
+	margin-left: 20px;
+    text-decoration: none;
+
+}
+
+.navw ul, .navb ul, .navr ul{
+	margin-top: 200px;
+	list-style: none;
+}
+.navb a{
+	color: #FFF;
+}
