@@ -1,6 +1,7 @@
 html,body{
 	padding: 0;
 	margin: 0;
+	background-color: #000;
 }
 
 /* BURGER BUTTON */
@@ -69,6 +70,7 @@ html,body{
 	width: 85vw;
 	height: 100vh;
 	background-color: red;
+	opacity: 0.7;
 }
 
 .navr ul{
@@ -80,10 +82,14 @@ html,body{
 /* BLOC LIST : RED */
 
 
-nav a img{
+nav a img, a img{
 	height: 20vh;
 	float: left;
 	margin-left: 100px;
+}
+nav a img{
+	margin-top: 10px;
+	margin-left: 250px;
 }
 
 
